@@ -1,0 +1,63 @@
+======================================================================
+SMART RETAIL ANALYTICS - RAPPORT D'EXÉCUTION
+======================================================================
+
+Date d'exécution: 2025-11-16 14:02:22
+Temps d'exécution: 11.25 secondes
+
+----------------------------------------------------------------------
+STATISTIQUES DES DONNÉES
+----------------------------------------------------------------------
+
+Dataset fusionné:
+  • Lignes: 10,200
+  • Colonnes: 14
+  • Période: 2024-01-01 à 2024-12-31
+
+Agrégations créées:
+  • daily_sales: 348 lignes
+  • campaign_sales: 82 lignes
+  • product_sales: 50 lignes
+  • country_sales: 114 lignes
+
+----------------------------------------------------------------------
+INSIGHTS CLÉS
+----------------------------------------------------------------------
+
+Top 5 Campagnes Marketing:
+  32. Konklab: 44,004.73€ (89 commandes)
+  70. Ventosanzap: 39,375.61€ (74 commandes)
+  76. Y-Solowarm: 38,926.46€ (79 commandes)
+  14. Cookley: 35,377.78€ (76 commandes)
+  78. Zaam-Dox: 35,037.73€ (74 commandes)
+
+Top 5 Produits:
+  49. Produit #49.0: 205,468.20€ (1650.0 unités)
+  36. Produit #36.0: 191,650.72€ (2336.0 unités)
+  6. Produit #6.0: 182,477.75€ (1950.0 unités)
+  34. Produit #34.0: 169,038.24€ (1736.0 unités)
+  21. Produit #21.0: 160,185.22€ (1768.0 unités)
+
+Top 5 Pays:
+  22. China: 897,217.27€ (1836 commandes)
+  48. Indonesia: 592,044.18€ (1156 commandes)
+  88. Russia: 357,962.90€ (761 commandes)
+  83. Philippines: 280,209.40€ (552 commandes)
+  37. France: 220,652.33€ (425 commandes)
+
+----------------------------------------------------------------------
+FICHIERS GÉNÉRÉS
+----------------------------------------------------------------------
+
+Données traitées:
+  • data/processed/
+
+Visualisations:
+  • ventes_par_jour.png
+  • ventes_par_campagne.png
+  • trafic_vs_ventes.png
+  Emplacement: outputs/figures/
+
+======================================================================
+FIN DU RAPPORT
+======================================================================

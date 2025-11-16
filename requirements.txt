@@ -1,0 +1,23 @@
+# Requirements for Smart Retail Analytics Project
+
+# Data manipulation
+pandas==2.1.4
+numpy==1.26.2
+
+# Configuration
+pyyaml==6.0.1
+pytz==2025.2
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Optional: for better data handling
+openpyxl==3.1.2
+python-dateutil==2.8.2
+
+# Optional: for scheduling
+schedule==1.2.0
+
+# Optional: for logging
+colorlog==6.8.0

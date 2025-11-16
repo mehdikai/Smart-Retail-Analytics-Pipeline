@@ -1,0 +1,66 @@
+# Configuration du projet Smart Retail Analytics
+
+# Chemins des données sources
+data_paths:
+  sqlite_db: "data/smartretail.db"
+  marketing_csv: "data/marketing.csv"
+  web_traffic_json: "data/web_traffic.json"
+  iot_stream_csv: "data/iot_stream.csv"
+  
+# Chemins de sortie
+output_paths:
+  processed_data: "data/processed/"
+  figures: "outputs/figures/"
+  report: "outputs/report/"
+
+# Configuration SQLite
+sqlite:
+  table_name: "orders"
+  columns:
+    - order_date
+    - country
+    - product_id
+    - quantity
+    - total_amount
+
+# Configuration Marketing CSV
+marketing:
+  columns:
+    - campaign_id
+    - campaign_name
+    - start_date
+    - end_date
+    - product_id
+    - budget
+
+# Configuration Web Traffic JSON
+web_traffic:
+  columns:
+    - date
+    - pageviews
+    - sessions
+    - source
+
+# Configuration IoT Stream CSV
+iot:
+  columns:
+    - timestamp
+    - footfall
+    - temperature
+
+# Paramètres de normalisation
+normalization:
+  date_format: "%Y-%m-%d"
+  fill_na_strategy: "mean"  # Options: mean, median, zero, drop
+  
+# Paramètres de visualisation
+visualization:
+  figure_size: [12, 6]
+  style: "seaborn-v0_8-darkgrid"
+  dpi: 300
+  save_format: "png"
+
+# Paramètres d'orchestration
+orchestration:
+  schedule: "daily"  # Fréquence d'exécution
+  log_level: "INFO"
