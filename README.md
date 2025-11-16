@@ -82,38 +82,8 @@ python orchestration.py
 
 # Test mode (run immediately)
 python orchestration.py --test
-Project Structure
-smart-retail-analytics/
-│
-├── main.py                  # Main pipeline orchestrator
-├── integration.py           # Data loading module
-├── normalisation.py         # Data cleaning module
-├── federation.py            # Data joining & aggregation
-├── visualisation.py         # Chart generation
-├── orchestration.py         # Scheduling & automation
-│
-├── config.yaml              # Configuration file
-├── requirements.txt         # Python dependencies
-├── README.md                # This file
-│
-├── data/
-│   ├── smartretail.db       # SQLite database (orders)
-│   ├── marketing.csv        # Marketing campaigns
-│   ├── web_traffic.json     # Web analytics
-│   ├── iot_stream.csv       # IoT sensor data
-│   └── processed/           # Output CSV files
-│
-├── outputs/
-│   ├── figures/             # Generated charts (PNG)
-│   │   ├── ventes_par_jour.png
-│   │   ├── ventes_par_campagne.png
-│   │   └── trafic_vs_ventes.png
-│   └── report/              # Execution summaries
-│       └── execution_summary.txt
-│
-└── logs/                    # Orchestration logs
-    └── orchestration.log
-Data Sources
+
+# Data Sources
 1. Orders (SQLite)
 •	Source: smartretail.db
 •	Table: orders
@@ -131,7 +101,8 @@ Data Sources
 •	Source: iot_stream.csv
 •	Columns: timestamp, footfall, temperature
 •	Records: 1,000 sensor readings
-Results
+
+# Results
 Pipeline Execution Stats
 •	Total Execution Time: 11.25 seconds
 •	Final Dataset: 10,200 rows × 14 columns
@@ -158,15 +129,15 @@ Top 5 Countries
 5.	France: €220,652.33 (425 orders)
 Visualizations
 1. Daily Sales Evolution
- 
+ <img width="4172" height="1770" alt="ventes_par_jour" src="https://github.com/user-attachments/assets/e310e1bf-f745-439e-bd82-413b72c8f822" />
 •	Clear upward trend visible
 •	Average daily revenue: ~€15,000
 2. Top Marketing Campaigns
- 
+ <img width="3558" height="2369" alt="ventes_par_campagne" src="https://github.com/user-attachments/assets/d07012b9-9409-4a3e-bf1d-88179facbf08" />
 •	3,359 orders linked to active campaigns
 •	6,841 orders without campaigns
 3. Traffic vs Sales Correlation
- 
+ <img width="4172" height="2963" alt="trafic_vs_ventes" src="https://github.com/user-attachments/assets/39b22673-2195-4d1b-b4f5-2c8e77c1d3e9" />
 •	Correlation coefficient: r = 0.047 (weak correlation)
 •	Indicates other factors drive sales beyond web traffic
 Technologies
@@ -196,7 +167,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5.	Open a Pull Request
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-Author
+
+# Author
 EL KAISSOUNI EL MEHDI
 •	GitHub: @mehdikai
 •	Email: kaissounim61@gmail.com
