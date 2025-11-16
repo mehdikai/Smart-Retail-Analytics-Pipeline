@@ -46,48 +46,6 @@ Orchestration
 •	Email notifications with reports
 •	Comprehensive logging system
 •	Error handling and retries
-Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    SMART RETAIL PIPELINE                    │
-└─────────────────────────────────────────────────────────────┘
-                              │
-        ┌─────────────────────┼─────────────────────┐
-        │                     │                     │
-        ▼                     ▼                     ▼
-  ┌──────────┐         ┌──────────┐         ┌──────────┐
-  │  SQLite  │         │   CSV    │         │   JSON   │
-  │ (orders) │         │(marketing│         │  (web    │
-  └──────────┘         │   IoT)   │         │ traffic) │
-        │              └──────────┘         └──────────┘
-        │                     │                     │
-        └─────────────────────┼─────────────────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │   INTEGRATION     │
-                    │   (loading)       │
-                    └─────────┬─────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │  NORMALIZATION    │
-                    │  (cleaning)       │
-                    └─────────┬─────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │   FEDERATION      │
-                    │   (joins)         │
-                    └─────────┬─────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │  VISUALIZATION    │
-                    │  (charts)         │
-                    └─────────┬─────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │    OUTPUTS        │
-                    │  • CSV files      │
-                    │  • PNG charts     │
-                    │  • TXT report     │
-                    └───────────────────┘
 Installation
 Prerequisites
 •	Python 3.8+
